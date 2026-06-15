@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}    https://jangada.brb.com.br/login.jsp
+${URL}    https://jangada
 ${USERNAME}    
 ${PASSWORD}    
 ${CARTAO}    6033261481005011
@@ -13,8 +13,8 @@ ${NUMERO_CONTA}    430340443
 Preencher Formulario CC
     [Setup]    Open Browser    ${URL}    chrome
     Maximize Browser Window  
-    Input Text  id=username  u675793
-    Input Text  id=password  garra77!8B763ED
+    Input Text  id=username  MeuUsuario
+    Input Text  id=password  MinhaSenha
     Click Element    xpath=//input[@type='submit']
     Sleep    1s
     Click Element  xpath=/html/body/div/aside[1]/section/ul/li[7]
